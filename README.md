@@ -2,11 +2,7 @@
 
 ## Md. Mithon Ali 💖
 
-
     Install ➡️ npm install
-
-</br>
-
     Running ➡️ npm run dev
 
 
