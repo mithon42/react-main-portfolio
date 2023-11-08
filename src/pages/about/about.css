@@ -1,0 +1,181 @@
+.about-container,
+.info-list,
+.stats,
+.resume-container {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+}
+
+/* ============ Infos =========== */
+.info-list {
+  row-gap: 2rem;
+  margin-bottom: 3.2rem;
+}
+
+.section-subtitle {
+  font-size: var(--h3-font-size);
+  font-weight: var(--weight-600);
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+.info-list .info-title,
+.info-list .info-description {
+  font-size: var(--small-font-size);
+}
+
+.info-list .info-description {
+  color: var(--title-color);
+  font-weight: var(--weight-600);
+}
+
+.stats-box {
+  border: 0.1rem solid var(--border-color);
+  padding: 2rem 3rem 2.5rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.stats-no {
+  color: var(--first-color);
+  font-size: var(--h1-font-size);
+  line-height: 1.2;
+}
+
+.stats-title {
+  font-size: var(--small-font-size);
+  list-style: 1.6;
+  padding-left: 4.5rem;
+  position: relative;
+}
+
+.stats-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 25%;
+  width: 3rem;
+  height: 0.1rem;
+  background-color: var(--title-color);
+}
+
+/* ============ Skills =========== */
+.subtitle-center {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.skills-container {
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  row-gap: 4;
+}
+
+.progress-circle {
+  width: 12rem;
+  height: 12rem;
+}
+
+.CircularProgressbar-path {
+  stroke: var(--first-color) !important;
+  stroke-linecap: butt !important;
+}
+
+.CircularProgressbar-trail {
+  stroke: var(--container-color) !important;
+}
+
+.CircularProgressbar-text {
+  fill: var(--title-color) !important;
+  font-family: var(--second-font);
+  font-size: var(--large-font-size) !important;
+}
+
+.skills-title {
+  text-align: center;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--weight-400);
+  margin-top: 2rem;
+}
+
+/* ======== Experience & Education ======== */
+
+.resume-item {
+  position: relative;
+  padding-left: 6rem;
+}
+
+.resume-item:not(:last-child) {
+  margin-bottom: 5rem;
+}
+
+.resume-item::before {
+  content: "";
+  position: absolute;
+  inset-block: 0;
+  left: 2rem;
+  border-left: 0.1rem solid var(--border-color);
+}
+
+.resume-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: var(--first-color);
+  color: var(--text-white);
+  text-align: center;
+  line-height: 4rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.resume-data {
+  background-color: var(--container-color);
+  padding: 0.2rem 1rem;
+  border-radius: 2rem;
+  font-size: var(--tiny-font-size);
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  font-weight: var(--weight-600);
+}
+
+.resume-subtitle {
+  font-size: var(--large-font-size);
+  font-weight: var(--weight-600);
+  margin-block: 2rem 1rem;
+}
+
+.resume-subtitle span {
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--small-font-size);
+  font-weight: var(--weight-600);
+  position: relative;
+  padding-left: 2.6rem;
+}
+
+.resume-subtitle span::before {
+  content: "";
+  position: absolute;
+  left: 0.7rem;
+  top: 1rem;
+  width: 1rem;
+  height: 0.2rem;
+  background-color: var(--text-color);
+}
+
+.resume-descriptio {
+  font-size: var(--smaller-font-size);
+  line-height: 1.6;
+}

@@ -1,0 +1,220 @@
+/* =============== Goole Fonts =============== */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap");
+
+/* ================== CSS Variables ================ */
+:root {
+  /* =========== Colors =========== */
+  /* Color mode HSL(hue, saturation, lightness) */
+  --first-color: hsl(271, 76%, 53%);
+  --title-color: hsl(0, 0%, 40%);
+  --text-color: hsl(0, 0%, 50%);
+  --body-color: hsl(0, 0%, 100%);
+  --container-color: hsl(0, 0%, 93%);
+  --border-color: hsl(0, 0%, 87%);
+  --text-white: #ffffff;
+
+  /* ========= Font And Typography ========= */
+  --body-font: "Open Sans", sans-serif;
+  --second-font: "Poppins", sans-serif;
+  /* Font Size */
+  --big-font-size: 5.6rem;
+  --h1-font-size: 5rem;
+  --h2-font-size: 3.2rem;
+  --h3-font-size: 2.4rem;
+  --large-font-size: 1.8rem;
+  --normal-font-size: 1.6rem;
+  --small-font-size: 1.5rem;
+  --smaller-font-size: 1.4rem;
+  --tiny-font-size: 1.4rem;
+  /* Font weight */
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+  --weight-700: 700;
+  --weight-800: 800;
+}
+
+.dark-theme {
+  --title-color: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 80%);
+  --body-color: hsl(0, 0%, 7%);
+  --container-color: hsl(0, 1%, 17%);
+  --border-color: hsl(0, 0%, 15%);
+}
+
+/* Responsive Typography */
+@media screen and (max-width: 1200px) {
+  :root {
+    --big-font-size: 3.6rem;
+    --h1-font-size: 3.2rem;
+    --h2-font-size: 2.4rem;
+    --h3-font-size: 2rem;
+    --large-font-size: 1.6rem;
+    --normal-font-size: 1.5rem;
+    --small-font-size: 1.4rem;
+    --smaller-font-size: 1.3rem;
+    --tiny-font-size: 1.1rem;
+  }
+}
+
+/* ============= Base ============= */
+html {
+  font-size: 62.5%;
+}
+
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--weight-500);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+  font-family: var(--second-font);
+  font-weight: var(--weight-700);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ============== Reusable css ============ */
+.container {
+  max-width: 114rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 3rem;
+}
+
+section {
+  padding-block: 7rem;
+}
+
+.section-title {
+  font-size: var(--big-font-size);
+  font-weight: var(--weight-800);
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+.section-title span {
+  color: var(--first-color);
+}
+
+.separator {
+  max-width: 40%;
+  border-top: 0.1rem solid var(--border-color);
+  margin: 7.2rem auto 5.6rem;
+}
+
+/* Btn Start */
+.btn {
+  display: inline-block;
+  color: var(--text-color);
+  border: 0.1rem solid var(--first-color);
+  padding: 1.5rem 7rem 1.5rem 3.5rem;
+  font-family: var(--second-font);
+  font-size: var(--small-font-size);
+  font-weight: var(--weight-500);
+  border-radius: 3.5rem;
+  -webkit-border-radius: 3.5rem;
+  -moz-border-radius: 3.5rem;
+  -ms-border-radius: 3.5rem;
+  -o-border-radius: 3.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  color: var(--text-white);
+  cursor: pointer;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--first-color);
+  z-index: -1;
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+.btn:hover::before {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+
+.btn-icon {
+  background-color: var(--first-color);
+  position: absolute;
+  inset-block: -0.2rem;
+  right: 0;
+  width: 5.5rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  columns: var(--text-white);
+  font-size: var(--large-font-size);
+  text-align: center;
+  line-height: 6rem;
+  color: var(--text-white);
+}
+/* Btn Ends */

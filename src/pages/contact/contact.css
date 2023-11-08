@@ -1,0 +1,118 @@
+/* Info Start */
+.contact-container {
+  grid-template-columns: 4fr 8fr;
+}
+
+.contact-title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--weight-600);
+  margin-bottom: 1rem;
+}
+
+.contact-description {
+  font-size: var(--small-font-size);
+  line-height: 1.6;
+}
+
+.contact-description,
+.contact-info .info-item {
+  margin-bottom: 2rem;
+}
+
+.contact-info .info-item {
+  display: flex;
+  align-items: center;
+  column-gap: 1.6rem;
+}
+
+.contact-info .info-icon {
+  color: var(--first-color);
+  font-size: var(--h2-font-size);
+}
+
+.contact-info .info-title {
+  font-size: var(--small-font-size);
+}
+
+.contact-info .info-desc {
+  font-display: var(--body-font);
+  font-size: var(--small-font-size);
+  font-weight: var(--weight-500);
+}
+/* Info Ends */
+
+/* Socials Start */
+.contact-socials {
+  display: flex;
+  column-gap: 1.6rem;
+}
+
+.contact-social-link {
+  background-color: var(--container-color);
+  color: var(--title-color);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  line-height: 4.4rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.contact-social-link:hover {
+  background-color: var(--first-color);
+  color: var(--text-white);
+}
+/* Socials Ends */
+
+/* form Start */
+.form-input-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+}
+
+.form-input-div {
+  margin-bottom: 3rem;
+}
+
+.form-control {
+  border: 0.1rem solid var(--container-color);
+  background-color: var(--container-color);
+  color: var(--title-color);
+  width: 100%;
+  padding: 1.2rem 2.4rem;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+  font-size: var(--small-font-size);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--first-color);
+}
+
+.textarea {
+  resize: none;
+  height: 16rem;
+}
+
+.contact-btn {
+  font-size: var(--h3-font-size);
+  line-height: 6.4rem;
+}
+/* form Ends */
