@@ -108,8 +108,8 @@ export const personalInfo = [
 
   {
     id: 9,
-    title: 'Skype : ',
-    description: 'Not',
+    title: 'Github : ',
+    description: 'mithon42',
   },
 
   {
@@ -205,49 +205,49 @@ export const skills = [
   {
     id: 1,
     title: 'Html',
-    percentage: '25',
+    percentage: '87',
   },
 
   {
     id: 2,
     title: 'Javascript',
-    percentage: '89',
+    percentage: '79',
   },
 
   {
     id: 3,
-    title: 'Css',
-    percentage: '70',
+    title: 'CSS',
+    percentage: '82',
   },
 
   {
     id: 4,
-    title: 'Php',
-    percentage: '66',
+    title: 'Bootstrap',
+    percentage: '90',
   },
 
   {
     id: 5,
-    title: 'Wordpress',
-    percentage: '95',
+    title: 'Tailwind CSS',
+    percentage: '92',
   },
 
   {
     id: 6,
-    title: 'Jquery',
-    percentage: '50',
+    title: 'Javascript',
+    percentage: '75',
   },
 
   {
     id: 7,
-    title: 'Angular',
-    percentage: '65',
+    title: 'jQuery',
+    percentage: '88',
   },
 
   {
     id: 8,
     title: 'React',
-    percentage: '45',
+    percentage: '71',
   },
 ];
 
